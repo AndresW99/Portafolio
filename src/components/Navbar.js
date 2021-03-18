@@ -17,7 +17,7 @@ import AssignmentInd from "@material-ui/icons/AssignmentInd";
 import Home from "@material-ui/icons/Home";
 import Apps from "@material-ui/icons/Apps";
 import { makeStyles } from "@material-ui/core/styles";
-import AndresW from "../images/AndresW.jpeg";
+// import AndresW from "../images/AndresW.jpeg";
 
 import Footer from "../components/Footer";
 
@@ -61,7 +61,7 @@ const Navbar = () => {
 
   const sideList = () => (
     <Box className={classes.menuSliderContainer} component="div">
-      <Avatar className={classes.avatar} src={AndresW} alt="Andrés Wellmann" />
+      <Avatar className={classes.avatar} src={'./assets/AndresW.jpeg'} alt="Andrés Wellmann" />
       <Divider />
       <List>
         {menuItems.map((item, i) => (

@@ -10,8 +10,14 @@ import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 
-import JournalApp from "../images/JournalApp.jpeg";
-import Portafolio from "../images/Portafolio.jpeg";
+// import JournalApp from "../images/JournalApp.jpeg";
+// import Portafolio from "/Portafolio.jpeg";
+
+// const portafolio = 'https://lh3.googleusercontent.com/5qlcMsUbvsnztjQroyQ4WZSG4vg1KLVF-nA7j1IeHlxBfUQncaC5v3sOJnG0OYhQYyAzqDY=s158'; 
+// const journal = 'https://lh3.googleusercontent.com/ZN2mS3s-9_qj6W78LUGodq0fKb-qM6LDH6myyG38FvZCbK2r4k9-WBfLOHlmSdXxItmsXHs=s159';
+
+const portafolio = './assets/Portafolio.jpeg';
+const JournalApp = './assets/JournalApp.jpeg';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -40,7 +46,7 @@ const projects = [
     en las diferentes tecnologias de front-end. Ademas de servir como medio de contacto. Es desarrollado utilizando
     React.js
     `,
-    image: Portafolio,
+    image: portafolio,
   },
 
 ];
