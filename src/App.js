@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Switch } from "react-router-dom";
+import { Redirect, Route, Switch } from "react-router-dom";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import Home from "./components";
 import Resume from "./components/Resume";
@@ -17,6 +17,8 @@ function App() {
         <Route exact path="/" component={Home} />
         <Route exact path="/resume" component={Resume} />
         <Route exact path="/portfolio" component={Portfolio} />
+        
+        <Redirect to="/" />
       </Switch>
     </React.Fragment>
   );
