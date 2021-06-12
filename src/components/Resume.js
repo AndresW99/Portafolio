@@ -121,8 +121,8 @@ const Resume = () => {
         align="center"
         className={classes.subtitle1}
       >
-      My name is Andrés Wellmann and i'm a 21 years old guy from Guatemala.  Now i'm a systems engineer student currently
-      in fourth year / 7th semester. 
+      My name is Andrés Wellmann and i'm a 22 years old guy from Guatemala.  Now i'm a systems engineer student currently
+      in fourth year / 8th semester. 
       </Typography>
       <Box component="div" className={classes.timeLine}>
         <Typography

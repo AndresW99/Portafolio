@@ -10,14 +10,9 @@ import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 
-// import JournalApp from "../images/JournalApp.jpeg";
-// import Portafolio from "/Portafolio.jpeg";
-
-// const portafolio = 'https://lh3.googleusercontent.com/5qlcMsUbvsnztjQroyQ4WZSG4vg1KLVF-nA7j1IeHlxBfUQncaC5v3sOJnG0OYhQYyAzqDY=s158'; 
-// const journal = 'https://lh3.googleusercontent.com/ZN2mS3s-9_qj6W78LUGodq0fKb-qM6LDH6myyG38FvZCbK2r4k9-WBfLOHlmSdXxItmsXHs=s159';
 
 const portafolio = './assets/Portafolio.jpeg';
-const JournalApp = './assets/JournalApp.jpeg';
+const JournalApp = './assets/CRUD.jpg';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -26,27 +21,29 @@ const useStyles = makeStyles((theme) => ({
     height: "100%",
   },
   cardContainer: {
-    maxWidth: 345,
+    maxWidth: 325,
     margin: "3rem auto",
   },
 }));
 
 const projects = [
   {
-    name: "Journal App",
-    description: `Esta es una página con la cual podras hacer apuntes de tu día a día,
-    en ella podras guardar una foto representativa. La página fue desarrollada utilizando
-    React con hooks, Redux y redux thunk para el manejo del estado de la página, como base de datos
-    se utilizo Firestore y para el diseño sass.`,
+    name: "CRUD React.js and Node.js",
+    description: `Una aplicación en la cual se realizo un CRUD sobre una cafeteria, en ella se puede llevar el control
+    de productos, proveedores y empleados. Se utilizo Redux para el manejo de los estados y Express para el backend.
+    Por ultimo como base de datos se utilizo Microsoft SQL Server.`,
     image: JournalApp,
+    enlace: 'GitHub',
+    link: 'https://github.com/AndresW99/Proyecto-BD-Front'
   },
   {
     name: "Portafolio",
     description: `Este es el portafolio con el cual mostrare mis proyectos así como la experiencia que tenga 
     en las diferentes tecnologias de front-end. Ademas de servir como medio de contacto. Es desarrollado utilizando
-    React.js
-    `,
+    React.js`,
     image: portafolio,
+    enlace: 'Proyecto',
+    link: 'https://andresw-portafolio.herokuapp.com/'
   },
 
 ];
@@ -56,7 +53,7 @@ const Portfolio = () => {
   return (
     <Box component="div" className={classes.mainContainer}>
       <Grid container justify="center">
-        {/* Projects */}
+        {/* { projects } */}
         {projects.map((project, i) => (
           <Grid item xs={12} sm={8} md={4} key={i}>
             <Card className={classes.cardContainer}>
@@ -77,8 +74,8 @@ const Portfolio = () => {
                 </CardContent>
               </CardActionArea>
               <CardActions>
-                <Button size="small" color="primary" href={ 'https://github.com/AndresW99?tab=repositories' }>
-                  GitHub Repository
+                <Button size="small" color="primary" href={ project.link }>
+                  { project.enlace }
                 </Button>
               </CardActions>
             </Card>
