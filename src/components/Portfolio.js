@@ -11,8 +11,9 @@ import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 
 
-const portafolio = './assets/Portafolio.jpeg';
-const JournalApp = './assets/CRUD.jpg';
+const portafolio   = './assets/Portafolio.jpeg';
+const JournalApp   = './assets/CRUD.jpg';
+const RickAndMorty = './assets/rickAndmorty.png';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -30,7 +31,8 @@ const projects = [
   {
     name: "CRUD React.js and Node.js",
     description: `Una aplicación en la cual se realizo un CRUD sobre una cafeteria, en ella se puede llevar el control
-    de productos, proveedores y empleados. Se utilizo Redux para el manejo de los estados y Express para el backend.
+    de productos, proveedores y empleados. Se utilizo Redux para el manejo de los estados y Express para el backend. Por
+    la parte del diseño se utilizo Bootstrap 5.
     Por ultimo como base de datos se utilizo Microsoft SQL Server.`,
     image: JournalApp,
     enlace: 'GitHub',
@@ -44,6 +46,14 @@ const projects = [
     image: portafolio,
     enlace: 'Proyecto',
     link: 'https://andresw-portafolio.herokuapp.com/'
+  },
+  {
+    name: "Rick and Morty API",
+    description: `Una pequeña aplicación utilizando la API de Rick and Morty. Para el llamado a la API utilice Axios, luego para 
+    el diseño de las cartas utilice Bootstrap 5 así como un poco de CSS. La aplicación fue creada con React.js con Hooks.`,
+    image: RickAndMorty,
+    enlace: 'Proyecto',
+    link: 'https://rick-and-morty-aw99.herokuapp.com/'
   },
 
 ];
@@ -74,7 +84,7 @@ const Portfolio = () => {
                 </CardContent>
               </CardActionArea>
               <CardActions>
-                <Button size="small" color="primary" href={ project.link }>
+                <Button size="small" color="primary" href={ project.link } target="_blank">
                   { project.enlace }
                 </Button>
               </CardActions>

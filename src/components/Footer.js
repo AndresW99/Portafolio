@@ -26,9 +26,9 @@ const Footer = () => {
 
   return (
     <BottomNavigation className={classes.bottomNavContainer}>
-      <BottomNavigationAction icon={<Twitter />} className={classes.root} href={ 'https://twitter.com/NvidiA_99' }/>
-      <BottomNavigationAction icon={<LinkedIn />} className={classes.root} href={ 'https://www.linkedin.com/in/andres-wellmann-70aba71b5/' }/>
-      <BottomNavigationAction icon={<Instagram />} className={classes.root} href={ 'https://www.instagram.com/awellmann99' }/>
+      <BottomNavigationAction icon={<Twitter />}   target="_blank" className={classes.root} href={ 'https://twitter.com/NvidiA_99' }/>
+      <BottomNavigationAction icon={<LinkedIn />}  target="_blank" className={classes.root} href={ 'https://www.linkedin.com/in/andres-wellmann-70aba71b5/' }/>
+      <BottomNavigationAction icon={<Instagram />} target="_blank" className={classes.root} href={ 'https://www.instagram.com/awellmann99' }/>
     </BottomNavigation>
   );
 };
