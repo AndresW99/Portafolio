@@ -14,6 +14,7 @@ import Typography from "@material-ui/core/Typography";
 const portafolio   = './assets/Portafolio.jpeg';
 const JournalApp   = './assets/CRUD.jpg';
 const RickAndMorty = './assets/rickAndmorty.png';
+const pokes        = './assets/pokes.png';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -55,6 +56,15 @@ const projects = [
     enlace: 'Proyecto',
     link: 'https://rick-and-morty-aw99.herokuapp.com/'
   },
+  {
+    name: "Pokemon API",
+    description: `Esta es una aplicación en la cual utilicé la API de pokemon, en la página principal podremos ver un saludo
+    y luego en la segunda podremos observar una tabla con 5 pokemones, podremos avanzar el paginado por medio de botones asi como
+    también utilizar un buscador. Al pulsar sobre un elemento de la tabla mostrara en una tarjeta más información del pokemon.`,
+    image: pokes,
+    enlace: 'Proyecto',
+    link: 'https://pokeapi-aw99.netlify.app/'
+  },
 
 ];
 
@@ -71,7 +81,7 @@ const Portfolio = () => {
                 <CardMedia
                   component="img"
                   alt="Project 1"
-                  height="140"
+                  height="165"
                   image={project.image}
                 />
                 <CardContent>

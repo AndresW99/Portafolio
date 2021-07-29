@@ -6,8 +6,6 @@ import Box from "@material-ui/core/Box";
 import Typed from "react-typed";
 import { makeStyles } from "@material-ui/core/styles";
 
-// import AndresW from "./assets/AndresW.jpeg";
-
 const useStyles = makeStyles((theme) => ({
   avatar: {
     width: theme.spacing(15),
