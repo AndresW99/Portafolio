@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/accessible-emoji */
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
@@ -122,7 +123,7 @@ const Resume = () => {
         className={classes.subtitle1}
       >
       My name is Andrés Wellmann and i'm a 22 years old guy from Guatemala.  Now i'm a systems engineer student currently
-      in fourth year / 8th semester. 
+      in ninth semester. 
       </Typography>
       <Box component="div" className={classes.timeLine}>
         <Typography
@@ -147,8 +148,8 @@ const Resume = () => {
             align="center"
             className={classes.subtitle1}
           >
-            During the past year while I was learning about react with hooks, 
-            I also created small projects in which to put what I learned into practice.
+            In 2020 i started learning React with Hooks, I took some courses in platforms like Udemy, Platzi and Youtube. 
+            That year i made small apps with React and Redux, apps like CRUD, calculator and a counter.
           </Typography>
         </Box>
         <Typography
@@ -163,19 +164,22 @@ const Resume = () => {
             align="center"
             className={classes.subHeading}
           >
-            Learning more React
+            Looking for a job
           </Typography>
           <Typography variant="body1" align="center" className={classes.body1}>
-            Implement Redux, MaterialUI, etc...
+            July 2021
           </Typography>
           <Typography
             variant="subtitle1"
             align="center"
             className={classes.subtitle1}
           >
-            Now i'm working with the most popular technologies for React like Redux for the control of the state or MaterialUI for the desgin.
+            In May of 2021 I started looking for a job, the company called Radiadores La Torre, called me for an interview
+            and then a technical interview with React, I had to make an app with the pokemon api. Past a week they called me and
+            gave me the job as a frontend developer.
           </Typography>
         </Box>
+
         <Typography
           variant="h2"
           className={`${classes.timeLineYear} ${classes.timeLineItem}`}
@@ -188,17 +192,52 @@ const Resume = () => {
             align="center"
             className={classes.subHeading}
           >
-            Databases
+            First job - Radiadores La Torre
           </Typography>
           <Typography variant="body1" align="center" className={classes.body1}>
-            SQL AND NO-SQL
+            August 16th - current
           </Typography>
           <Typography
             variant="subtitle1"
             align="center"
             className={classes.subtitle1}
           >
-            In the university i work with SQL, but i create personal projects with No-sql like Firestore and mongoDB.  
+            Now i'm working as a frontend developer with Angular (Yeah the interview was with React, but the job is with Angular 😭),  part of my responsabilities are:
+            Design the mockups of the apps, develop the apps, analyze the requirements, fix bugs and looking for a new technologies to implement in future projects.
+          </Typography>
+        </Box>
+
+        <Typography
+          variant="h2"
+          className={`${classes.timeLineYear} ${classes.timeLineItem}`}
+        >
+          2022
+        </Typography>
+        <Box component="div" className={classes.timeLineItem}>
+          <Typography
+            variant="h5"
+            align="center"
+            className={classes.subHeading}
+          >
+            Tools that i use to work
+          </Typography>
+          <Typography variant="body1" align="center" className={classes.body1}>
+            Languages, libraries and frameworks
+          </Typography>
+          <Typography
+            variant="subtitle1"
+            align="center"
+            className={classes.subtitle1}
+          >
+            Languages: JavaScript ES8, TypeScript and a little of Node.js 
+            <br></br>
+            Frameworks: React.js, Angular, Electron.js, Express.js and a little of Next.js  
+            <br></br>
+            Design frameworks: Bootstrap, Material UI and nebular
+            <br></br>
+            Control version: Git and Github
+            <br></br>
+            Other tools: Power Bi, Docker, Excel and visual studio code
           </Typography>
         </Box>
       </Box>
