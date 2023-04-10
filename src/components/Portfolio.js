@@ -13,8 +13,8 @@ import Typography from "@material-ui/core/Typography";
 
 const portafolio   = './assets/Portafolio.jpeg';
 const JournalApp   = './assets/CRUD.jpg';
-const RickAndMorty = './assets/rickAndmorty.png';
 const pokes        = './assets/pokes.png';
+const GraphQL      = './assets/GraphQL.png';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -49,12 +49,12 @@ const projects = [
     link: 'https://andresw-portafolio.herokuapp.com/'
   },
   {
-    name: "Rick and Morty API",
-    description: `Una pequeña aplicación utilizando la API de Rick and Morty. Para el llamado a la API utilice Axios, luego para 
-    el diseño de las cartas utilice Bootstrap 5 así como un poco de CSS. La aplicación fue creada con React.js con Hooks.`,
-    image: RickAndMorty,
+    name: "API's con GraphQL",
+    description: `Esta aplicación ha sido desarrollada utilizando React.js por el lado del Frontend. Mientras que por el lado del backend, se utilizaron dos APIS
+    de GraphQL. Rick And Morty y Star Wars. Se utilizo Apollo Server para hacer la conexión. Por el tema de diseño se utilizo TailwindCSS.`,
+    image: GraphQL,
     enlace: 'Proyecto',
-    link: 'https://rick-and-morty-aw99.herokuapp.com/'
+    link: 'https://rick-and-morty-sw-graphql.netlify.app'
   },
   {
     name: "Pokemon API",
